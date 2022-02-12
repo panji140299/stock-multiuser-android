@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.Dashboard">
+
+
+    <LinearLayout
+        android:id="@+id/fashionmen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="350dp"
+        android:background="@drawable/men"
+        android:orientation="vertical"
+        android:onClick="fashionmen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fashionmen"
+            android:padding="8dp"
+            android:textSize="42dp"
+            android:text="Fashion Men"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fashionwomen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="340dp"
+        android:background="@drawable/woman"
+        android:orientation="vertical"
+        android:onClick="fashionwoman"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titlewom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="42dp"
+            android:padding="8dp"
+            android:text="Fashion Woman"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
