@@ -9,6 +9,7 @@
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/drawable/ic_menu_camera.xml" value="0.2365" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/drawable/ic_reset.xml" value="0.124" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/drawable/input_text.xml" value="0.2365" />
+        <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/activity_about.xml" value="0.176" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/activity_add_staff.xml" value="0.223731884057971" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/activity_add_stock.xml" value="0.223731884057971" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.223731884057971" />
@@ -24,6 +25,7 @@
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/activity_user.xml" value="0.264" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/app_bar_user.xml" value="0.11302083333333333" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/content_user.xml" value="0.25416666666666665" />
+        <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/dashboard_about.xml" value="0.24592391304347827" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/dashboard_book.xml" value="0.11302083333333333" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/dashboard_electronic.xml" value="0.223731884057971" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/dashboard_fashion.xml" value="0.223731884057971" />
@@ -36,6 +38,7 @@
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/menfashion.xml" value="0.15353260869565216" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/nav_header_user.xml" value="0.11302083333333333" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/layout/womanfashion.xml" value="0.223731884057971" />
+        <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/menu/about.xml" value="0.25416666666666665" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/menu/activity_main_drawer.xml" value="0.11302083333333333" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/menu/activity_user_drawer.xml" value="0.176" />
         <entry key="..\:/Bootcamp/Android/FinalProject/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />

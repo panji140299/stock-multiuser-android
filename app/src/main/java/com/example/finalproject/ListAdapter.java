@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -13,6 +14,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.finalproject.model.BarangHelperClass;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -27,7 +29,6 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
     }
 
 
-
     @NonNull
     @Override
     public ListViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -40,6 +41,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
         BarangHelperClass barang = list.get(position);
         holder.nama.setText(barang.getNama());
         holder.stock.setText(barang.getStock());
+        Picasso.get().load(barang.getImage()).into(holder.gambar);
     }
 
     @Override
@@ -51,20 +53,23 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ListViewHolder
 
         TextView nama, stock;
         Button deskripsi;
+        ImageView gambar;
 
         public ListViewHolder(@NonNull View itemView){
             super(itemView);
             nama = itemView.findViewById(R.id.nama);
             stock = itemView.findViewById(R.id.stock);
             deskripsi = itemView.findViewById(R.id.detail);
+            gambar = itemView.findViewById(R.id.gambarBarang);
             deskripsi.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     BarangHelperClass barang = list.get(getAdapterPosition());
-
                     Intent detailIntent = new Intent(context, DetailActivity.class);
                     detailIntent.putExtra("nama", barang.getNama());
                     detailIntent.putExtra("stock", barang.getStock());
+                    detailIntent.putExtra("image", barang.getImage());
+                    detailIntent.putExtra("deskripsi",barang.getDeskripsi());
                     context.startActivity(detailIntent);
                 }
             });

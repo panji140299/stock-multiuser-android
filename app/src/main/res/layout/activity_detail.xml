@@ -17,8 +17,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="0dp"
             android:layout_marginEnd="0dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/computer" />
+            android:adjustViewBounds="true" />
 
         <TextView
             android:id="@+id/nama"
@@ -65,8 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/text2"
-            android:padding="16dp"
-            android:text="@string/detail" />
+            android:padding="16dp"/>
 
     </RelativeLayout>
 

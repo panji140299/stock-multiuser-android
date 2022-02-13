@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.example.finalproject.R;
 import com.example.finalproject.user.Dashboard;
+import com.squareup.picasso.Picasso;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -23,9 +24,13 @@ public class DetailActivity extends AppCompatActivity {
 
         TextView namaBarang = findViewById(R.id.nama);
         TextView stockBarang = findViewById(R.id.stock);
+        TextView deskBarang = findViewById(R.id.deskripsi);
+        ImageView gambarBarang = findViewById(R.id.sportsImageDetail);
 
         namaBarang.setText(getIntent().getStringExtra("nama"));
         stockBarang.setText(getIntent().getStringExtra("stock"));
+        deskBarang.setText(getIntent().getStringExtra("deskripsi"));
+        Picasso.get().load(getIntent().getStringExtra("image")).into(gambarBarang);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
