@@ -12,6 +12,7 @@ import android.widget.Toast;
 import com.example.finalproject.MainActivity;
 import com.example.finalproject.R;
 import com.example.finalproject.user.Dashboard;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class StaffDashboard extends AppCompatActivity {
 
@@ -32,6 +33,7 @@ public class StaffDashboard extends AppCompatActivity {
         Toast.makeText(this, "Anda Telah "+item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()){
             case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(StaffDashboard.this, MainActivity.class));
                 return true;
             default:

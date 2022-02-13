@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.example.finalproject.ListBarang;
 import com.example.finalproject.MainActivity;
 import com.example.finalproject.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Dashboard extends AppCompatActivity {
     public static final String EXTRA_MESSAGE = "EXTRA_MESSAGE";
@@ -40,6 +41,7 @@ public class Dashboard extends AppCompatActivity {
         Toast.makeText(this, "Anda Telah "+item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()){
             case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(Dashboard.this, MainActivity.class));
                 return true;
             default:

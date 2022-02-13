@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.example.finalproject.MainActivity;
 import com.example.finalproject.R;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class AdminDashboard extends AppCompatActivity {
 
@@ -40,6 +41,7 @@ public class AdminDashboard extends AppCompatActivity {
         Toast.makeText(this, "Anda Telah "+item.getTitle(), Toast.LENGTH_SHORT).show();
         switch (item.getItemId()){
             case R.id.logout:
+                FirebaseAuth.getInstance().signOut();
                 startActivity(new Intent(AdminDashboard.this, MainActivity.class));
                 return true;
             default:
